@@ -1,0 +1,8 @@
+{
+"ADDPOSTReq":
+"{\"accuracy\": \"20\",\"name\": \"Hai Hello\",\"phone_number\": \"123654987\",\"address\": \"No 430\",\"types\": \"shoe park\",\"website\": \"https://ding.com\",\"location\": {\"lat\": \"77.383494\",\"lng\": \"91.427362\"},\"language\": \"Tamil\"}",
+
+"EditProcess":
+"{\"accuracy\": \"20\",\"name\": \"Hai Hello\",\"phone_number\": \"asd123654987\",\"address\": \"No 430\",\"types\": \"shoe park\",\"website\": \"https://ding.com\",\"location\": {\"lat\": \"77.383494\",\"lng\": \"91.427362\"},\"language\": \"Tamil\"}"
+
+}

@@ -1,0 +1,153 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-12-27T07:13:44.723Z",
+        "line": 12,
+        "name": "Verify id place is being verified Successfully added using AddPlaceAPI",
+        "description": "",
+        "id": "validating-place-api-s;verify-id-place-is-being-verified-successfully-added-using-addplaceapi;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 756000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Place Payload with input details \"addPlaceAPI.ADDPOSTReq\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"addPlaceAPI.ADDPOSTReq\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinitions.stepDefinitions.place_Payload_with_input_details(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1137000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user calls AddPlaceAPI with POST http request",
+            "match": {
+              "location": "stepDefinitions.stepDefinitions.user_calls_AddPlaceAPI_with_POST_http_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 11000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the API call us success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.stepDefinitions.the_API_call_us_success_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "status in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OK\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepDefinitions.stepDefinitions.status_in_response_body_is(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-27T07:13:46.667Z",
+        "line": 15,
+        "name": "Verify newly added Place Id availablity using GETPlace_API",
+        "description": "",
+        "id": "validating-place-api-s;verify-newly-added-place-id-availablity-using-getplace-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Here we are going to View the details of the recently created API.",
+            "match": {
+              "location": "stepDefinitions.stepDefinitions.here_we_are_going_to_view_the_details_of_the_recently_created_api()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2792000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user calls GETPlaceAPI using the GET http request",
+            "match": {
+              "location": "stepDefinitions.stepDefinitions.user_calls_get_place_api_using_the_get_http_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Verify the Response status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinitions.stepDefinitions.verify_the_response_status_code_is(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Verify the Name Phone Number in response body",
+            "match": {
+              "location": "stepDefinitions.stepDefinitions.verify_the_name_phone_number_in_response_body()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Validating Place API\u0027s",
+    "description": "",
+    "id": "validating-place-api-s",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/feature/Validation.feature",
+    "tags": []
+  }
+]
